@@ -79,38 +79,6 @@ if ($donnees3['admin']==2) {
 	</div>
 </div>
 <?php
-$connection->closeCursor();
-$connection3 = $bdd->query("SELECT admin FROM identi where login='".$login."' AND mdp='".$mdp."'");
-$donnees3 = $connection3->fetch();
-elseif ($donnees3['admin']==3) {
-?>
-<div id=page>
-        <div id=MenuA>
-                <div id=Option3>
-                        <div id=bouton1 onclick="javascript:window.open('pdfBur.php')">
-
-                                Impression Burger
-                        </div>
-                </div>
-	</div>
-</div>
-<?php
-$connection->closeCursor();
-$connection3 = $bdd->query("SELECT admin FROM identi where login='".$login."' AND mdp='".$mdp."'");
-$donnees3 = $connection3->fetch();
-elseif ($donnees3['admin']==4) {
-?>
-<div id=page>
-        <div id=MenuA>
-                <div id=Option3>
-                        <div id=bouton1 onclick="javascript:window.open('pdfPiz.php')">
-
-                                Impression Pizza
-                        </div>
-                </div>
-	</div>
-</div>
-<?php
 }else
 {
 ?>
